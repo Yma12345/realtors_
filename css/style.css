@@ -1,0 +1,23 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    background-color: #4cbba8;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: lightgray;
+}
+
+.nav-link:hover {
+    color: lightgray;
+}
