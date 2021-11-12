@@ -21,3 +21,11 @@
 .nav-link:hover {
     color: lightgray;
 }
+
+.btn {
+    background-color: #4cbba8;
+}
+
+.card {
+    float: left;
+}
