@@ -1,8 +1,10 @@
 <template id="template-house-modal">
     {{#.}}
-        <h5 class="modal-title">Edit</h5>
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit house {{id}}</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="modal-body">
+      </div>
+        <div class="modal-content">
             <form>
                 <label for="id">ID:</label>
                 <input type="number" name="id" value="{{id}}" readonly require><br>
@@ -40,8 +42,8 @@
                 <input type="text" name="updated_at" value="{{updated_at}}" require readonly><br>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button id="submit-changes" data-bs-dismiss="modal" type="submit">Edit</button>
+            <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+            <button id="submit-changes" class="btn" data-bs-dismiss="modal" type="submit">Edit</button>
             </form>
         </div>
     {{/.}}

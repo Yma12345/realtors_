@@ -8,9 +8,9 @@
             <td class="houses-housenumber"><span>{{housenumber}}</span></td>
             <td class="houses-price"><span>{{price}}</span></td>
             <td>
-                <button type="button" class="btn-edit btn btn-primary" id="{{id}}" data-bs-toggle="modal" data-bs-target="#edit-house-modal"> Edit</button>
+                <button type="button" class="btn-edit btn" id="{{id}}" data-bs-toggle="modal" data-bs-target="#edit-house-modal"> Edit</button>
             </td>
-            <td><button class="button btn-danger btn-delete" id="{{id}}">Delete</button></td>
+            <td><button class="btn btn-delete" id="{{id}}">Delete</button></td>
         </tr>
     {{/.}}
 </template>

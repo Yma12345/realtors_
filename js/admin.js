@@ -9,7 +9,7 @@ function getHouses() {
 			console.log(objects)
             var template = $("#table-houses-template").html();
 			var renderTemplate = Mustache.render(template, objects);
-			$("#admin-table").append(renderTemplate);
+			$("#admin-table tbody").html(renderTemplate);
 		},
 		error: function (response) {
 			errorPopup("Something went wrong");
@@ -90,6 +90,7 @@ function submitHouseChanges() {
 
 		success: function (message) {
 			succesPopup("Succesfully edited house"+id);
+			getHouses();
 		},
 		error: function () {
 			errorPopup("Something went wrong");
@@ -135,6 +136,7 @@ function createHouseChanges() {
 
 		success: function (message) {
 			succesPopup("Succesfully created a new house");
+			getHouses();
 		},
 		error: function () {
 			errorPopup("Something went wrong");

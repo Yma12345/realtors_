@@ -24,8 +24,14 @@
 
 .btn {
     background-color: #4cbba8;
+    color: white;
 }
 
 .card {
     float: left;
+}
+
+.create-button {
+    margin: 10px;
+    margin-left: 600px;
 }
