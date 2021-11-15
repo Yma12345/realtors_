@@ -164,6 +164,8 @@ function succesPopup(message,timeout){
 	}
   }
 
+//these are 2 functions to show a popup with a timeout for a succes or fail
+
 function errorPopup(message,timeout){
 	if(timeout == undefined){
 	  timeout = 2.5

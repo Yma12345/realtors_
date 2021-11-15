@@ -27,4 +27,5 @@ class Objects extends Model
               'created_at',
               'updated_at',
     ];
+    //this are the editable functions
 }

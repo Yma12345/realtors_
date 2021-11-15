@@ -12,12 +12,14 @@ class ObjectsController extends Controller
     {
         $objects = Objects::get();
         return response()->json($objects);
+        //function to get the objects and returns it to json
     }
 
     public function getById($id)
     {
         $objects = Objects::find($id);
         return response()->json($objects);
+        //function to get the objects by id and returns it to json
     }
 
     function createObject(Request $req){
@@ -37,6 +39,7 @@ class ObjectsController extends Controller
             $errors = $validator->errors();
             return response()->json($errors, 400);
         }
+        //validates the given inputs
 
         Objects::create([
             'street' => $req->street,
@@ -54,6 +57,7 @@ class ObjectsController extends Controller
             'sold' => $req->sold,
             'price' => $req->price,
         ]);
+        //creates the object
 
         return response()->json('Succesfully created a new object');
     }
@@ -63,10 +67,10 @@ class ObjectsController extends Controller
         $objects = Objects::find($id);
         $objects->delete();
         return response()->json('deleted');
+        //delete the object by id
     }
 
     function editObject(Request $req, $id){
-        // $req = json_decode($req);
         $validator = Validator::make($req->all(), [
             'street' => 'required|min:3',
             'place' => 'required|min:3',
@@ -79,6 +83,7 @@ class ObjectsController extends Controller
             'surface' => 'required',
             'price' => 'required|integer',
         ]);
+        //validates the given inputs
         if ($validator->fails()) {
             $errors = $validator->errors();
             return response()->json($errors, 400);
@@ -101,6 +106,7 @@ class ObjectsController extends Controller
             'sold' => $req->sold,
             'price' => $req->price,
         ]);
+        //updates the variables
         return response()->json('it worked');
     }
 }

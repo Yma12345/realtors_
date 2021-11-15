@@ -9,3 +9,5 @@ Route::post('objects/create', 'App\Http\Controllers\ObjectsController@createObje
 Route::post('objects/edit/{id}', 'App\Http\Controllers\ObjectsController@editObject');
 Route::post('objects/delete/{id}', 'App\Http\Controllers\ObjectsController@delete');
 
+//posts functions to the route
+

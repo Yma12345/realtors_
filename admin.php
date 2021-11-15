@@ -2,7 +2,7 @@
 
 <body>
   <?php include('inc/navbar.php'); ?>
-  <?php include('inc/modals/edit.php'); ?>
+  <?php include('inc/templates/edit.php'); ?>
 
   <?php include('inc/admin-table.php'); ?>
   <?php include('inc/templates/admin-table-template.php'); ?>
