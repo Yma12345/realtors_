@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php
 include("inc/header.php");
 include("inc/navbar.php");

@@ -31,6 +31,7 @@ class CreateObjectsTable extends Migration
             $table->integer("price");
             $table->timestamps();
         });
+        //makes table in db
     }
 
     /**

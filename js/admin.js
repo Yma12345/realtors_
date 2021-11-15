@@ -49,6 +49,7 @@ function openEditHouse(btnEdit) {
 			errorPopup("Something went wrong");
 		}
 	});
+	//opens the modal and renders the edit template
 }
 
 function submitHouseChanges() {
@@ -96,6 +97,7 @@ function submitHouseChanges() {
 			errorPopup("Something went wrong");
 		}
 	});
+	//saves all the values of the edit and posts it to the backend
 }
 
 function createHouseChanges() {
@@ -142,6 +144,7 @@ function createHouseChanges() {
 			errorPopup("Something went wrong");
 		}
 	});
+	//saves all the values of the create and posts it to the backend
 }
 
 function succesPopup(message,timeout){
